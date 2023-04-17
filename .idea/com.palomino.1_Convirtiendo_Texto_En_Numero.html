@@ -18,8 +18,18 @@
 		salralinea();
 	}
 
+    //Cuando solicitamos al usuario que ingrese datos a traves de un prompt, lo que devuelve es un string, una cadena de caracteres
 
+	var victorias = parseInt(prompt("Informe la cantidad de victorias"));
+	var empates = parseInt(prompt("Informe la cantidad de empates"));
 
+	//texto * numero = numero
+	// "10" * 2 = 20
+	// "10" + 20 = 1020
+
+	totalPuntos = (victorias * 3) + empates;
+
+	imprimir("El total de puntos del equipo es: " + totalPuntos)
 
 </script>
 </body>
