@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media</title>
+</head>
+<body>
+<h1>Calcular la media de las edades de una familia</h1>
+<script>
+
+    function salralinea(){
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(frase){
+		document.write(frase);
+		salralinea();
+	}
+
+
+	var numeroMiebros = parseInt(prompt("Ingrese la candtidad de mienbros de su familia"));
+	var i=1;
+ 	var totalEdades = 0;
+
+ 	//Toda inicialización de una variable que se use en un while tiene que estar fuera
+	while(i <= numeroMiebros){
+
+		edad = parseInt(prompt("Ingrese la edad del familiar"));
+		totalEdades = totalEdades + edad;
+		i++;
+	}
+
+	mediaEdad = totalEdades/numeroMiebros;
+
+	imprimir("La media de las edades de la familia es: "+ mediaEdad);
+	imprimir("Fin")
+
+</script>
+</body>
+</html>
