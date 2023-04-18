@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Juego</title>
+</head>
+<body>
+<h1>Juego de Adivinación</h1>
+<script>
+    function salralinea(){
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(frase){
+		document.write(frase);
+		salralinea();
+	}
+
+    //Math.round() sirve para redondear números
+    //Math.random() sirve para obtener numeros aleatorios entre 0 y 1 pero con decimales
+    //Para convertirlo poder obtener un número entre 0 y 10 que es lo que queremos se multiplica por 10 y se redondea con el .round
+
+	var numeroIngresado = Math.round(Math.random()*10);
+    var nuemeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"));
+
+    if (numeroIngresado == nuemeroLanzado){
+        imprimir("USTED ACERTÓ");
+    }
+    else{
+        imprimir("Error, el número pensado era: " + numeroIngresado);
+    }
+
+    /* el != significa diferente de
+    if (numeroIngresado != nuemeroLanzado){
+        imprimir("Error, el número pensado era: " + numeroIngresado);
+    }*/
+
+</script>
+</body>
+</html>
