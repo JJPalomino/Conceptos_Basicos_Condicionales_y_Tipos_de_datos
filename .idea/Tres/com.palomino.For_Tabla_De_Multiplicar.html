@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabla</title>
+</head>
+<body>
+<h1>Tabla de multiplicar</h1>
+<script>
+    function salralinea(){
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(frase){
+		document.write(frase);
+		salralinea();
+	}
+
+	var multiplicador = 1;
+
+	imprimir("WHILE");
+
+	while (multiplicador <= 10){
+		imprimir(5 * multiplicador);
+		multiplicador ++;
+	}
+
+
+	imprimir("FOR");
+
+	for (var multiplicador = 1; multiplicador <= 10; multiplicador++){
+		imprimir(5 * multiplicador);
+	}
+
+</script>
+</body>
+</html>
