@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lineas</title>
+</head>
+<body>
+<h1>Imprimir muchas lineas</h1>
+<script>
+    function salralinea(){
+		document.write("<br>");
+	}
+
+	function imprimir(frase){
+		document.write(frase);
+		salralinea();
+	}
+
+    for (var lineas=1;lineas<=3;lineas++){
+
+        for (var columnas=1;columnas<=10;columnas++){
+            document.write("*");
+        }
+
+        salralinea();
+
+    }
+    salralinea();
+    salralinea();
+
+    imprimir("FIN");
+
+</script>
+</body>
+</html>

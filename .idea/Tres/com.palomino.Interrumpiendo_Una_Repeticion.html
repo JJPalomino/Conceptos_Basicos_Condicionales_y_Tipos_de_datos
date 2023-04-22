@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego</title>
+</head>
+<body>
+<h1>Juego de Adivinación</h1>
+<script>
+    function salralinea(){
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(frase){
+		document.write(frase);
+		salralinea();
+	}
+
+	var numeroPensado = Math.round(Math.random()*10);
+    var intentos = 3;
+
+    //Cada ves que susemos un while tenemos que tener un contador (i)
+    var contador = 1;
+
+
+    while(contador <= intentos){
+
+        var nuemeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"));
+
+        if (numeroPensado == nuemeroLanzado){
+            alert("USTED ACERTÓ en el intento " + contador + " El númeor pensado era: " + numeroPensado);
+            break;
+        }
+        else{
+            alert("Error");
+        }
+
+        //Siempre al final se debe incrementar el contador
+        contador++;
+    }
+
+    if (numeroPensado == nuemeroLanzado){
+            imprimir("USTED ACERTÓ en el intento " + contador + " El númeor pensado era: " + numeroPensado);
+        }
+        else{
+            imprimir("Error, el númeor pensado era: " + numeroPensado);
+        }
+
+    imprimir("FIN");
+
+</script>
+</body>
+</html>
